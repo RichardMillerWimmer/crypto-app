@@ -1,16 +1,21 @@
 import './App.css';
 
 import routes from './routes'
-import {Navbar} from './components/index'
+import { Navbar } from './components/index'
+import { Layout } from 'antd';
 
 function App() {
   return (
-    <div className="App">
-      <div className=''>
+    <div className="app">
+      <div className='navbar'>
         <Navbar />
       </div>
-      <div className='navbar'>
-        {routes}
+      <div className='main'>
+        <Layout>
+          <div className='routes'>
+            {routes}
+          </div>
+        </Layout>
       </div>
       <div className='footer'>
 
