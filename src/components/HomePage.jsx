@@ -8,7 +8,7 @@ import { CryptoCurrencies, News } from './index';
 
 
 const HomePage = () => {
-    const { data, error, isFetching } = useGetCryptosQuery();
+    const { data, error, isFetching } = useGetCryptosQuery(10);
     console.log('data:', data);
     // console.log('error:', error);
     const globalStats = data?.data?.stats;
@@ -17,7 +17,7 @@ const HomePage = () => {
 
     return (
         <>
-            <Typography.Title level={2}>Global Crypto Statistics</Typography.Title>   
+            <Typography.Title level={2} className='heading'>Global Crypto Statistics</Typography.Title>   
             <Row>
                 <Col span={12}><Statistic title='Total Cryptocurrencies' value={globalStats.total}></Statistic></Col>
                 <Col span={12}><Statistic title='Total Exchanges' value={millify(globalStats.totalExchanges)}></Statistic></Col>

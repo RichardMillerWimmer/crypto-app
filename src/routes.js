@@ -4,10 +4,10 @@ import { HomePage, Exchanges, CryptoCurrencies, CryptoDetails, News } from './co
 
 export default (
     <Switch>
-        <Route exact to='/' component={HomePage}/>
-        <Route to='/exchanges' component={Exchanges}/>
-        <Route to='/cryptocurrencies' component={CryptoCurrencies}/>
-        <Route to='/crypto/:coinId' component={CryptoDetails}/>
-        <Route to='/news' component={News}/>
+        <Route exact path='/' component={HomePage}/>
+        <Route path='/exchanges' component={Exchanges}/>
+        <Route path='/cryptocurrencies' component={CryptoCurrencies}/>
+        <Route path='/crypto/:coinId' component={CryptoDetails}/>
+        <Route path='/news' component={News}/>
     </Switch>
 )
