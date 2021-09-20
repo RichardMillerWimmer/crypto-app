@@ -1,7 +1,7 @@
 import './App.css';
 
 import routes from './routes'
-import { Navbar } from './components/index'
+import { Navbar, Footer } from './components/index'
 import { Layout } from 'antd';
 
 function App() {
@@ -16,9 +16,9 @@ function App() {
             {routes}
           </div>
         </Layout>
-      </div>
-      <div className='footer'>
-
+        <div className='footer'>
+          <Footer />
+        </div>
       </div>
     </div>
   );
