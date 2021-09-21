@@ -1,3 +1,5 @@
+/* This css is from the tutorial */
+
 :root{
   --text-primary:#000;
   --bgPrimary:#fff;
@@ -299,6 +301,7 @@ padding: 0px 20px;
 }
 .news-title{
 width: 70%;
+color: red;
 }
 
 .news-image-container .img{
