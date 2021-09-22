@@ -10,7 +10,7 @@ import Loader from './Loader';
 
 const HomePage = () => {
     const { data, error, isFetching } = useGetCryptosQuery(10);
-    console.log('data:', data);
+    // console.log('data:', data);
     // console.log('error:', error);
     const globalStats = data?.data?.stats;
 
